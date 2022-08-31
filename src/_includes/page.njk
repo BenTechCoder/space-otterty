@@ -1,0 +1,23 @@
+{% extends "./layout.njk" %}
+
+{% block content %}
+  <div class="[ page-hero ] [ region full-bleed ] [ bg-dark color-accent ]">
+    <div class="wrapper">
+      {% if pageTitle %}
+        <h1>{{ pageTitle }}</h1>
+      {% else %}
+        <h1>{{ title }}</h1>
+      {% endif %}
+      {% if pageDescription %}
+        <p>{{ pageDescription }}</p>
+      {% else %}
+        <p>{{ description }}</p>
+      {% endif %}
+    </div>
+  </div>
+  <div class="wrapper region">
+    <div class="flow">
+      {{ content | safe }}
+    </div>
+  </div>
+{% endblock %}

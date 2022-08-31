@@ -1,0 +1,22 @@
+[build]
+
+  publish = "dist"
+  command = "AWS_LAMBDA_FUNCTION_NAME=trickpuppeteer npm run build"
+
+
+  [[redirects]]
+    from = "/feed/"
+    to = "/feed/feed.xml"
+    status = 200
+
+  [[headers]]
+    for = "/*"
+
+    [headers.values]
+      X-Frame-Options = "SAMEORIGIN"
+      X-XSS-Protection = "1; mode=block"
+      cache-control = '''
+      max-age=0,
+      no-cache,
+      no-store,
+      must-revalidate'''

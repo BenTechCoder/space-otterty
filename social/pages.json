@@ -1,0 +1,21 @@
+[
+	{
+   "title":"Home",
+   "imgName":"home"
+	},
+
+	{
+   "title":"About",
+   "imgName":"about"
+	},
+
+	{
+   "title":"Test&nbsp;page",
+   "imgName":"test-page"
+	},
+
+	{
+   "title":"FAQ",
+   "imgName":"faq"
+	}
+] 

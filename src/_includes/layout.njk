@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+  {% include "./partials/siteHead.njk" %}
+
+  <body>
+    <div class="hidden">
+      {% include './partials/sprite.svg' %}
+    </div>
+
+    {# showHomeLink is true by defualt but available to be turned off by setting it to false #}
+    {% set showHomeLink = true %}
+
+    {% include "./partials/header.njk" %}
+
+    {% block content %}{% endblock %}
+
+    {% include "./partials/footer.njk" %}
+    <!--JS-->
+    {% if version.js | length == 0 %}
+      {% set JsVersion = '' %}
+    {% else %}
+      {% set JsVersion = version.js %}
+    {% endif %}
+    <script type="module" src="/index{{ JsVersion }}.js"></script>
+  </body>
+</html>

@@ -1,0 +1,12 @@
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  --region-space: var(--space-xs);
+
+  h3 {
+    flex-shrink: 0;
+    margin-inline-end: var(--space-l);
+  }
+}

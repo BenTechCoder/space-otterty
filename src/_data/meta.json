@@ -1,0 +1,11 @@
+{
+  "title": "Space Otterty",
+  "siteName":"Space Otterty",
+  "url": "https://space-otterty.netlify.app",
+  "siteDescription": "A opinionated Eleventy (11ty) starter project with Parcel JS",
+  "author": {
+    "name": "Benjamin Lebron",
+    "email": "benjaminnlebron@gmail.com"
+  },
+  "githubUrl": "https://github.com/BenTechCoder/space-otterty"
+}

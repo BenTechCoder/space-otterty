@@ -1,0 +1,24 @@
+{% extends "./layout.njk" %}
+
+{% block content %}
+
+  <div class=" [ hero ]  [ background-img region ] ">
+    <div class="[ background-img-inner wrapper flow ] [ color-light ]">
+      <h1 class="massive alignment-center">{{ pageTitle }}</h1>
+      <p>{{ meta.siteDescription }}</p>
+    </div>
+    {% image "src/images/otter_space_by_arseniic_d5qiq2q-pre.jpg", "otter in space by arseniic" %}
+  </div>
+  <div class="wrapper region flow stack">
+    <a  href="/pages/about">About this project</a>
+    <a  href="{{ meta.githubUrl }}">
+            Use this template on GitHub
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30">
+        <use href="#github"/>
+      </svg>
+    </a>
+  </div>
+
+  {{ content | safe }}
+
+{% endblock %}

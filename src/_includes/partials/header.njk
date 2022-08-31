@@ -1,0 +1,27 @@
+<header class=" [ header ] [ wrapper sidebar region ] " data-header="data-header">
+  {% if showHomeLink == true %}
+    <h3 class="">
+      <a href="/">{{ meta.title }}</a>
+    </h3>
+  {% endif %}
+  <nav class=" [ nav ] [ header_nav ] ">
+    <ul role="list" class = "nav__list">
+      {% for page in collections.page %}
+        <li>
+          <a href="{{ page.url }}">{{ page.data.title }}</a>
+        </li>
+      {% endfor %}
+
+      {% for item in menudata %}
+        <li data-list='icon'>
+          <a href="{{ item.url }}">
+            {{ item.title }}
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30">
+              <use href="#{{ item.icon }}"/>
+            </svg>
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </nav>
+</header>
