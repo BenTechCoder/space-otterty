@@ -175,7 +175,7 @@ code:not([class*='language']) {
   display: inline-flex;
   padding: 0.15em;
   background-color: $light;
-  color: tdbc-color('gray');
+  color: $dark;
   font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
   border-radius: 2px;
   font-size: 0.75em;

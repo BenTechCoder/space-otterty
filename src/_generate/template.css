@@ -155,60 +155,17 @@ a:hover {
   margin-inline-end: 0.25em;
 }
 
-article {
-  > ul,
-  > ol {
-    > li + li {
-      margin-top: 1rem;
-    }
-  }
-
-  * {
-    + h2 {
-      margin-top: 4rem;
-    }
-
-    + h3 {
-      margin-top: 2rem;
-    }
-  }
-}
 
 strong {
   font-weight: 700;
 }
 
-code:not([class*='language']) {
-  display: inline-flex;
-  padding: 0.15em;
-  background-color: $light;
-  color: tdbc-color('gray');
-  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
-  border-radius: 2px;
-  font-size: 0.75em;
-  line-height: 1.1;
-}
+
 
 pre code:not([class*='language']) {
   width: 100%;
   max-width: calc(100vw - 2rem);
   overflow-x: auto;
-}
-
-blockquote {
-  margin-left: 0;
-  margin-right: 0;
-  padding-left: 1.5rem;
-  border-left: 3px solid $accent;
-  color: $dark;
-
-  + * {
-    margin-top: 3rem;
-  }
-
-  :last-child {
-    margin-bottom: 0;
-  }
 }
 
 [data-list='no-style'] {
