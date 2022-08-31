@@ -4,7 +4,7 @@
 Photo credit: https://www.deviantart.com/arseniic
 
 Space Otterty is an [Eleventy (11ty)](https://www.11ty.dev/) starter project with [Parcel](https://parceljs.org/).
-**It is a fork of [eleventy-parcel](https://github.com/mbarker84/eleventy-parcel) by [Michelle Barker](https://css-irl.info/) with bits also taken from [Stephanie Eckle's 11ty Netlify Jumpstart](https://11ty-netlify-jumpstart.netlify.app/).**
+**It is a fork of [eleventy-parcel](https://github.com/mbarker84/eleventy-parcel) by [Michelle Barker](https://css-irl.info/) with bits also taken from [Stephanie Eckle's 11ty Netlify Jumpstart](https://11ty-netlify-jumpstart.netlify.app/). Some other bits were also taken from [Learn eleventy from scratch](https://learneleventyfromscratch.com/)**
 
 ## Features
 
