@@ -88,7 +88,9 @@ body {
     font-family: 'Nanum Gothic', sans-serif;
     font-size: var(--step-0);
     display: flex;
-    place-items: center center;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
     background-color: #020826;
     color: #f25042;
     text-align: center;
