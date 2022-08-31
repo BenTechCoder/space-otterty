@@ -15,6 +15,9 @@ It is a fork of [eleventy-parcel](https://github.com/mbarker84/eleventy-parcel) 
 - SVG sprite creation
 - Image optimisation via [11ty Image](https://www.11ty.dev/docs/plugins/image/)
 - Prettier and Stylelint
+- RSS feed
+- Sitemap.xml
+- Automatic Opengraph social images generation
 
 ## Commands
 
