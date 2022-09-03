@@ -1,10 +1,7 @@
-const colors = {
-  primary: '#716040',
-  secondary: '#8c7851',
-  light: '#fffffe',
-  dark: '#020826',
-  accent: '#f25042',
-}
+const { json } = require('stream/consumers')
+const tokens = require('./colors.js')
+
+const colors = JSON.parse(tokens)
 
 const fonts = {
   header: 'headings, sans-serif',
