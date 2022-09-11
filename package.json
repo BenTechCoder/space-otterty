@@ -1,7 +1,7 @@
 {
   "name": "Space-Otterty",
   "version": "1.0.0",
-  "description": "",
+  "description": "A opinionated Eleventy (11ty) starter project with Parcel JS",
   "browserslist": [
     "ie 8",
     "Chrome 26",
