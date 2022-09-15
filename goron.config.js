@@ -1,4 +1,3 @@
-const { json } = require('stream/consumers')
 const tokens = require('./colors.js')
 
 const colors = JSON.parse(tokens)
