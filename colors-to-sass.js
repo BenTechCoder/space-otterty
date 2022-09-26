@@ -1,7 +1,7 @@
 const fs = require('fs')
-const tokens = require('./colors.js')
+const config = require('./blyth.config.js')
 
-const colors = JSON.parse(tokens)
+const { colors } = config.theme
 
 function toSassVariables(tokensObject) {
   let string = ''

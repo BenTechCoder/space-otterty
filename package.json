@@ -9,11 +9,11 @@
     "Safari 7"
   ],
   "scripts": {
-    "token:goron": "goron -out src/css/tokens.css",
+    "blyth": "blyth tokens",
+    "token:blyth": "blyth tokens",
     "token:rename": "node rename.js ./src/css/ css scss",
-    "token:quotes": "node removeQuotes.js src/css/tokens.scss",
     "token:colors": "node colors-to-sass.js",
-    "tokens": "run-s token:colors token:goron token:rename token:quotes",
+    "tokens": "run-s token:colors token:blyth token:rename",
     "start": "run-s start:remove start:watch",
     "start:remove": "node onStart.js",
     "start:watch": "run-p watch:eleventy watch:parcel",
@@ -42,6 +42,7 @@
     "@babel/core": "^7.16.0",
     "@babel/eslint-parser": "^7.16.3",
     "@babel/preset-react": "^7.16.0",
+    "@bly-th/css": "^0.6.1",
     "@parcel/transformer-sass": "^2.0.0",
     "@types/node": "^16.11.12",
     "@typescript-eslint/eslint-plugin": "^5.6.0",
@@ -61,7 +62,6 @@
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.27.1",
     "eslint-plugin-react-hooks": "^4.3.0",
-    "goron": "^0.1.1",
     "md5": "^2.3.0",
     "npm-run-all": "^4.1.5",
     "parcel": "^2.0.0",
@@ -71,5 +71,12 @@
     "stylelint-prettier": "^2.0.0",
     "svg-sprite-generator": "^0.0.7",
     "typescript": "^4.5.2"
+  },
+  "bin": {
+    "blyth": "node_modules/@bly-th/css/src/index.js"
+  },
+  "blyth": {
+    "tokensOutputPath": "./src/css/tokens.css",
+    "utilityOutputPath": "/src/css/utils"
   }
 }
